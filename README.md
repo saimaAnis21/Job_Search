@@ -1,9 +1,9 @@
-# Bookstore-App
+# Job Search-App
 # [Live Link](https://book-store-app101.herokuapp.com//)
 
 A  ![](https://img.shields.io/badge/Microverse-blueviolet)  capstone project for React-Redux Module
 
-A Bookstore App for sorting through different books
+A job search App for searching jobs using different filters
 
 ## Built With
 
@@ -11,12 +11,13 @@ A Bookstore App for sorting through different books
 - React
 - Redux
 - CSS
+- Heroku
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-- Clone this project by typing ```git clone git@github.com:Byabasaija/bookstore_app.git```
+- Clone this project by typing ```git clone git@github.com:saimaAnis21/Job_Search.git```
 - cd into the root directory
 - Run git pull origin main
 - run ```npm install``` to install the project dependencies
@@ -31,16 +32,10 @@ To get a local copy up and running follow these simple example steps.
 👤 **Saima**
 
 **GitHub** [@saimaAnis21](https://github.com/saimaAnis21)
+
 **Twitter** [@SheTALKS](https://twitter.com/SheTALKS6)
+
 **LinkedIn** [Saima Anis](https://www.linkedin.com/in/saima-anis-3a07921b2/)
-
-👤 **Pascal Byabasaija**
-
-**Github** [Byabasaija](https://github.com/Byabasaija)
-
-**Linkedin** [Pascal Byabasaija](https://linkedin/in/pascal-byabasaija)
-
-**Twitter** [Pascal](https://twitter.com/byabashaijapoet)
 
 ## Acknowledgements
 - Microverse
