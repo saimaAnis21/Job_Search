@@ -1,5 +1,5 @@
 # Job Search-App
-# [Live Link](https://book-store-app101.herokuapp.com//)
+# [Live Link](https://job-search-app-101.herokuapp.com/)
 
 A  ![](https://img.shields.io/badge/Microverse-blueviolet)  capstone project for React-Redux Module
 
