@@ -1,3 +1,16 @@
-.test {
-  color: white;
+.filter-panel {
+  display: flex;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+  justify-content:space-around;
+
+}
+
+.filter-dropdown{
+  margin:auto;
+
 }
