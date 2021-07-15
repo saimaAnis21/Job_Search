@@ -2,6 +2,7 @@ import PropTypes, { string } from 'prop-types';
 
 function FilterDropDown(props) {
   const { options, name } = props;
+
   return (
     <div>
       <p>
@@ -9,7 +10,7 @@ function FilterDropDown(props) {
       </p>
       <select>
         {options.map((opt) => (
-          <option key={opt} value={opt}>{opt}</option>
+          <option key={opt.id} value={opt.name}>{opt.name}</option>
         ))}
         ;
       </select>
