@@ -1,21 +1,31 @@
-// import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import FilterDropDown from '../components/FilterDropDown';
 import '../styles.css';
-// import fetchData from '../logic/fetchData';
 import {
-  cataegories, levels, companies, locations,
+  categories, levels, locations,
 } from './fitlerdata';
 import changeFilterAction from '../actions/index';
+import getCompanies from '../logic/getCompanies';
 
 const Filters = (props) => {
   const [company, setCompany] = useState();
   const [location, setLocation] = useState();
   const [category, setCategory] = useState();
   const [level, setLevel] = useState();
+  const [companies, setCompanies] = useState([{ id: 0, name: '--' }]);
   const { filterJobs } = props;
+
+  const getData = async () => {
+    const companiesList = await getCompanies();
+    // console.log(companiesList);
+    setCompanies(companiesList);
+  };
+
+  useEffect(() => {
+    getData();
+  });
 
   const filterChangeHandler = (fieldname, value) => {
     switch (fieldname) {
@@ -40,7 +50,7 @@ const Filters = (props) => {
     const filter = {
       company, location, category, level,
     };
-    console.log(filter);
+    // console.log(filter);
     filterJobs(filter);
   };
 
@@ -49,7 +59,7 @@ const Filters = (props) => {
     <div className="filter-panel">
       <FilterDropDown options={companies} name="Company" changeFilter={filterChangeHandler} />
       <FilterDropDown options={locations} name="Location" changeFilter={filterChangeHandler} />
-      <FilterDropDown options={cataegories} name="Job Category" changeFilter={filterChangeHandler} />
+      <FilterDropDown options={categories} name="Job Category" changeFilter={filterChangeHandler} />
       <FilterDropDown options={levels} name="Experience Level" changeFilter={filterChangeHandler} />
       <button onClick={(e) => handleSearch(e)} type="submit"> Search Jobs </button>
     </div>

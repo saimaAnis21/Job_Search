@@ -6,6 +6,7 @@ function App() {
     <div>
       <Filters />
       <Jobs />
+
     </div>
   );
 }

@@ -1,9 +1,9 @@
 const state = {
   filters: {
-    company: '',
-    location: '',
-    category: '',
-    level: '',
+    company: '--',
+    location: '--',
+    category: '--',
+    level: '--',
   },
 };
 
