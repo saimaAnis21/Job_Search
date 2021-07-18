@@ -5,6 +5,7 @@ A  ![](https://img.shields.io/badge/Microverse-blueviolet)  capstone project for
 
 A job search App for searching jobs using different filters
 
+![](screenshot.png)
 ## Built With
 
 - JavaScript
