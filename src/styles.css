@@ -6,13 +6,11 @@
   margin: auto;
   width: 80%;
   padding: 20px;
-  justify-content:space-around;
-
+  justify-content: space-around;
 }
 
-.filter-dropdown{
-  margin:auto;
-
+.filter-dropdown {
+  margin: auto;
 }
 
 .job-panel {
@@ -20,32 +18,32 @@
   grid-template-columns: auto auto auto auto;
   row-gap: 10px; */
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   border-color: black;
   border-width: 2px;
   border-style: solid;
   margin: auto;
   width: 80%;
-  padding: 20px;  
+  padding: 20px;
   margin-top: 10px;
 }
 
-.job{
+.job {
   border-color: royalblue;
   border-width: 2px;
   border-style: solid;
-  margin: auto;  
-  width: 80%;   
+  margin: auto;
+  width: 80%;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.job-detail{
+.job-detail {
   margin: 80px;
 }
 
-.apply-btn{
+.apply-btn {
   background-color: white;
   color: black;
   width: 20px;
@@ -53,18 +51,16 @@
   border-width: 2px;
   border-style: solid;
   padding: 10px;
-  
 }
 
-.p-10{
+.p-10 {
   padding: 10px;
 }
 
-a{
+a {
   color: black;
 }
 
-.royalblue{
+.royalblue {
   color: royalblue;
 }
-
