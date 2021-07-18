@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 import FilterDropDown from '../components/FilterDropDown';
 import '../styles.css';
 import {
-  categories, levels, locations,
+  categories, levels,
 } from './fitlerdata';
 import changeFilterAction from '../actions/index';
 import getCompanies from '../logic/getCompanies';
 
 const Filters = (props) => {
   const [company, setCompany] = useState();
-  const [location, setLocation] = useState();
+  // const [location, setLocation] = useState();
   const [category, setCategory] = useState();
   const [level, setLevel] = useState();
   const [companies, setCompanies] = useState([{ id: 0, name: '--' }]);
@@ -32,9 +32,6 @@ const Filters = (props) => {
       case 'Company':
         setCompany(value);
         break;
-      case 'Location':
-        setLocation(value);
-        break;
       case 'Job Category':
         setCategory(value);
         break;
@@ -48,7 +45,7 @@ const Filters = (props) => {
   const handleSearch = (e) => {
     e.preventDefault();
     const filter = {
-      company, location, category, level,
+      company, category, level,
     };
     // console.log(filter);
     filterJobs(filter);
@@ -58,7 +55,6 @@ const Filters = (props) => {
 
     <div className="filter-panel">
       <FilterDropDown options={companies} name="Company" changeFilter={filterChangeHandler} />
-      <FilterDropDown options={locations} name="Location" changeFilter={filterChangeHandler} />
       <FilterDropDown options={categories} name="Job Category" changeFilter={filterChangeHandler} />
       <FilterDropDown options={levels} name="Experience Level" changeFilter={filterChangeHandler} />
       <button onClick={(e) => handleSearch(e)} type="submit"> Search Jobs </button>

@@ -21,7 +21,6 @@ function JobDesc(props) {
       </Link>
 
       {info.name}
-      {info.levels.map((level) => (<p key={level}>{level}</p>))}
 
     </div>
   );

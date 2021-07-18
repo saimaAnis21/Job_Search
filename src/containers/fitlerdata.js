@@ -62,8 +62,6 @@ const levels = [
 //   { id: 877, name: 'Dropbox' },
 // ];
 
-const locations = [{ id: 1, name: 'location1' }, { id: 2, name: 'location2' }, { id: 3, name: 'location3' }];
-
 export {
-  levels, categories, locations,
+  levels, categories,
 };

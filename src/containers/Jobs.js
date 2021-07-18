@@ -7,8 +7,9 @@ import '../styles.css';
 
 function Jobs(props) {
   const [jobs, setJobs] = useState([{
-    id: '', company: '', name: '', site: '', content: '', levels: [''],
+    id: '', company: '', name: '', site: '', content: '',
   }]);
+
   const { filters } = props;
 
   const getData = async () => {
@@ -31,6 +32,7 @@ function Jobs(props) {
 
     data = await fetchData(url);
     const jobsData = [];
+
     if (data.results) {
       for (let i = 0; i < data.results.length; i += 1) {
         jobsData.push({
@@ -39,7 +41,7 @@ function Jobs(props) {
           name: data.results[i].name,
           site: data.results[i].refs.landing_page,
           content: data.results[i].contents,
-          levels: data.results[i].levels,
+
         });
       }
     }
