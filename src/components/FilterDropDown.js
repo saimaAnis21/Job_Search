@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-function FilterDropDown(props) {
+const FilterDropDown = (props) => {
   const { options, name, changeFilter } = props;
 
   return (
@@ -21,7 +21,7 @@ function FilterDropDown(props) {
       </select>
     </div>
   );
-}
+};
 
 FilterDropDown.propTypes = {
   options: PropTypes.objectOf.isRequired,

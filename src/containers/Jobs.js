@@ -5,7 +5,7 @@ import fetchData from '../logic/fetchData';
 import JobDesc from '../components/JobDesc';
 import '../styles.css';
 
-function Jobs(props) {
+const Jobs = (props) => {
   const [jobs, setJobs] = useState([{
     id: '', company: '', name: '', site: '', content: '',
   }]);
@@ -28,25 +28,24 @@ function Jobs(props) {
     }
     url += '&page=1';
 
-    console.log(url);
-
     data = await fetchData(url);
     const jobsData = [];
 
-    if (data.results) {
-      for (let i = 0; i < data.results.length; i += 1) {
-        jobsData.push({
-          id: data.results[i].id,
-          company: data.results[i].company.name,
-          name: data.results[i].name,
-          site: data.results[i].refs.landing_page,
-          content: data.results[i].contents,
+    if (data !== 'ERROR') {
+      if (data.results) {
+        for (let i = 0; i < data.results.length; i += 1) {
+          jobsData.push({
+            id: data.results[i].id,
+            company: data.results[i].company.name,
+            name: data.results[i].name,
+            site: data.results[i].refs.landing_page,
+            content: data.results[i].contents,
 
-        });
+          });
+        }
       }
+      setJobs(jobsData);
     }
-
-    setJobs(jobsData);
   };
 
   useEffect(() => {
@@ -63,7 +62,7 @@ function Jobs(props) {
 
     </div>
   );
-}
+};
 
 const mapStateToProps = (state) => ({
   filters: state.filters,
@@ -77,7 +76,6 @@ Jobs.propTypes = {
 Jobs.defaultProps = {
   filters: {
     company: 'comp1',
-    location: 'loc1',
     category: 'cat1',
     level: 'lev1',
 

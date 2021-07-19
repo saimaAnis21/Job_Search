@@ -11,7 +11,6 @@ import getCompanies from '../logic/getCompanies';
 
 const Filters = (props) => {
   const [company, setCompany] = useState();
-  // const [location, setLocation] = useState();
   const [category, setCategory] = useState();
   const [level, setLevel] = useState();
   const [companies, setCompanies] = useState([{ id: 0, name: '--' }]);
@@ -19,8 +18,9 @@ const Filters = (props) => {
 
   const getData = async () => {
     const companiesList = await getCompanies();
-    // console.log(companiesList);
-    setCompanies(companiesList);
+    if (companiesList !== 'ERROR') {
+      setCompanies(companiesList);
+    }
   };
 
   useEffect(() => {
@@ -47,7 +47,6 @@ const Filters = (props) => {
     const filter = {
       company, category, level,
     };
-    // console.log(filter);
     filterJobs(filter);
   };
 
@@ -73,19 +72,3 @@ Filters.propTypes = {
 };
 
 export default connect(null, mapDispatchToProps)(Filters);
-
-// const getData = async () => {
-//   let data = {};
-//   data = await fetchData('https://www.themuse.com/api/public/companies?api_key=52c53b7a661df891c7d5773f63a1237ea2da27a628f7e95455a2b73ae669136e&page=1&descending=true');
-//   const comp = data.results;
-//   const arr = [];
-//   for (let i = 0; i < comp.length; i += 1) {
-//     arr.push({ id: comp[i].id, name: comp[i].name });
-//   }
-//   console.log(arr);
-//   setCompanies(arr);
-// };
-
-// useEffect(() => {
-//   getData();
-// });

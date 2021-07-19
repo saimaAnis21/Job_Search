@@ -38,30 +38,6 @@ const levels = [
   { id: 5, name: 'Internship' },
 ];
 
-// const companies = [
-//   { id: 0, name: '--' },
-//   { id: 1483, name: 'Inline Plastics' },
-//   { id: 1433, name: 'Duolingo' },
-//   { id: 11699, name: 'Coursera' },
-//   { id: 1535, name: 'E*TRADE' },
-//   { id: 828, name: 'Success Academy Charter Schools' },
-//   { id: 1420, name: 'PCORI' },
-//   { id: 976, name: 'MBI' },
-//   { id: 922, name: 'CarMax' },
-//   { id: 838, name: 'Epsilon' },
-//   { id: 11828, name: 'Ironwood Pharmaceuticals' },
-//   { id: 952, name: 'BMW of North America, LLC' },
-//   { id: 11871, name: 'Splice' },
-//   { id: 11835, name: '4ocean' },
-//   { id: 1327, name: 'The Muse' },
-//   { id: 1403, name: 'NIKE, Inc.' },
-//   { id: 686, name: 'First Look Media' },
-//   { id: 11741, name: 'Nuvera Life Science Consulting' },
-//   { id: 11772, name: 'Memorial Sloan Kettering Cancer Center' },
-//   { id: 11811, name: 'Intuit' },
-//   { id: 877, name: 'Dropbox' },
-// ];
-
 export {
   levels, categories,
 };

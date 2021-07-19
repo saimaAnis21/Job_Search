@@ -1,14 +1,12 @@
 import Filters from '../containers/Filters';
 import Jobs from '../containers/Jobs';
 
-function App() {
-  return (
-    <div>
-      <Filters />
-      <Jobs />
+const App = () => (
+  <div>
+    <Filters />
+    <Jobs />
 
-    </div>
-  );
-}
+  </div>
+);
 
 export default App;

@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import '../styles.css';
 
-function JobDesc(props) {
+const JobDesc = (props) => {
   const { info } = props;
 
   return (
     <div className="job p-10">
 
       <Link to={{
-        pathname: '/Job',
+        pathname: `/Job/${info.id}`,
         state: {
           info,
         },
@@ -24,7 +24,7 @@ function JobDesc(props) {
 
     </div>
   );
-}
+};
 
 JobDesc.propTypes = {
   info: PropTypes.objectOf.isRequired,

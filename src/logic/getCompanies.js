@@ -8,6 +8,9 @@ const getCompanies = async () => {
   data[1] = await fetchData(`${url}2`);
   data[2] = await fetchData(`${url}3`);
 
+  if (data[2] === 'ERROR') {
+    return 'ERROR';
+  }
   for (let j = 0; j <= 2; j += 1) {
     for (let i = 0; i < data[j].results.length; i += 1) {
       companies.push({

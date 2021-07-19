@@ -9,7 +9,7 @@ const fetchData = async (url) => {
 
     data = await response.json();
   } catch (e) {
-    console.log('error msg: Error getting data');
+    data = 'ERROR';
   }
 
   return data;
