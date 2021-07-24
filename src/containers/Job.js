@@ -1,11 +1,20 @@
 import { Link, useLocation } from 'react-router-dom';
 import '../styles.css';
-
 import { Markup } from 'interweave';
 
 const Job = () => {
   const location = useLocation();
-  const { info } = location.state;
+  let info;
+  if (location.state !== undefined) {
+    info = location.state.info;
+  } else {
+    info = {
+      company: 'XYZ',
+      site: 'XYZ',
+      name: 'XYZ',
+      content: 'XYZ',
+    };
+  }
 
   return (
     <div className="job-detail">

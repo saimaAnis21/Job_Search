@@ -1,0 +1,484 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+       
+      <div
+        class="filter-panel"
+      >
+        <div>
+          <p>
+            Company
+          </p>
+          <select>
+            <option
+              value="--"
+            >
+              --
+            </option>
+            ;
+          </select>
+        </div>
+        <div>
+          <p>
+            Job Category
+          </p>
+          <select>
+            <option
+              value="--"
+            >
+              --
+            </option>
+            <option
+              value="Accounting"
+            >
+              Accounting
+            </option>
+            <option
+              value="Account Management/Customer Successg"
+            >
+              Account Management/Customer Successg
+            </option>
+            <option
+              value="Corporate"
+            >
+              Corporate
+            </option>
+            <option
+              value="Customer Service Career"
+            >
+              Customer Service Career
+            </option>
+            <option
+              value="Data Science"
+            >
+              Data Science
+            </option>
+            <option
+              value="Design"
+            >
+              Design
+            </option>
+            <option
+              value="Editor"
+            >
+              Editor
+            </option>
+            <option
+              value="Education"
+            >
+              Education
+            </option>
+            <option
+              value="HR"
+            >
+              HR
+            </option>
+            <option
+              value="IT"
+            >
+              IT
+            </option>
+            <option
+              value="Law"
+            >
+              Law
+            </option>
+            <option
+              value="Marketing"
+            >
+              Marketing
+            </option>
+            <option
+              value="Mechanic"
+            >
+              Mechanic
+            </option>
+            <option
+              value="Mental Health"
+            >
+              Mental Health
+            </option>
+            <option
+              value="Nurses"
+            >
+              Nurses
+            </option>
+            <option
+              value="Office Administration"
+            >
+              Office Administration
+            </option>
+            <option
+              value="Physical Assistant"
+            >
+              Physical Assistant
+            </option>
+            <option
+              value="Product"
+            >
+              Product
+            </option>
+            <option
+              value="Project Management"
+            >
+              Project Management
+            </option>
+            <option
+              value="Public Relations"
+            >
+              Public Relations
+            </option>
+            <option
+              value="Recruiting"
+            >
+              Recruiting
+            </option>
+            <option
+              value="Retail"
+            >
+              Retail
+            </option>
+            <option
+              value="Sales"
+            >
+              Sales
+            </option>
+            <option
+              value="Software Engineer"
+            >
+              Software Engineer
+            </option>
+            <option
+              value="UX"
+            >
+              UX
+            </option>
+            <option
+              value="Videography"
+            >
+              Videography
+            </option>
+            <option
+              value="Writer"
+            >
+              Writer
+            </option>
+            ;
+          </select>
+        </div>
+        <div>
+          <p>
+            Experience Level
+          </p>
+          <select>
+            <option
+              value="--"
+            >
+              --
+            </option>
+            <option
+              value="Entry"
+            >
+              Entry
+            </option>
+            <option
+              value="Mid Level"
+            >
+              Mid Level
+            </option>
+            <option
+              value="Senior Level"
+            >
+              Senior Level
+            </option>
+            <option
+              value="management"
+            >
+              management
+            </option>
+            <option
+              value="Internship"
+            >
+              Internship
+            </option>
+            ;
+          </select>
+        </div>
+        <button
+          type="submit"
+        >
+           Search Jobs 
+        </button>
+      </div>
+       
+    </div>
+  </body>,
+  "container": <div>
+     
+    <div
+      class="filter-panel"
+    >
+      <div>
+        <p>
+          Company
+        </p>
+        <select>
+          <option
+            value="--"
+          >
+            --
+          </option>
+          ;
+        </select>
+      </div>
+      <div>
+        <p>
+          Job Category
+        </p>
+        <select>
+          <option
+            value="--"
+          >
+            --
+          </option>
+          <option
+            value="Accounting"
+          >
+            Accounting
+          </option>
+          <option
+            value="Account Management/Customer Successg"
+          >
+            Account Management/Customer Successg
+          </option>
+          <option
+            value="Corporate"
+          >
+            Corporate
+          </option>
+          <option
+            value="Customer Service Career"
+          >
+            Customer Service Career
+          </option>
+          <option
+            value="Data Science"
+          >
+            Data Science
+          </option>
+          <option
+            value="Design"
+          >
+            Design
+          </option>
+          <option
+            value="Editor"
+          >
+            Editor
+          </option>
+          <option
+            value="Education"
+          >
+            Education
+          </option>
+          <option
+            value="HR"
+          >
+            HR
+          </option>
+          <option
+            value="IT"
+          >
+            IT
+          </option>
+          <option
+            value="Law"
+          >
+            Law
+          </option>
+          <option
+            value="Marketing"
+          >
+            Marketing
+          </option>
+          <option
+            value="Mechanic"
+          >
+            Mechanic
+          </option>
+          <option
+            value="Mental Health"
+          >
+            Mental Health
+          </option>
+          <option
+            value="Nurses"
+          >
+            Nurses
+          </option>
+          <option
+            value="Office Administration"
+          >
+            Office Administration
+          </option>
+          <option
+            value="Physical Assistant"
+          >
+            Physical Assistant
+          </option>
+          <option
+            value="Product"
+          >
+            Product
+          </option>
+          <option
+            value="Project Management"
+          >
+            Project Management
+          </option>
+          <option
+            value="Public Relations"
+          >
+            Public Relations
+          </option>
+          <option
+            value="Recruiting"
+          >
+            Recruiting
+          </option>
+          <option
+            value="Retail"
+          >
+            Retail
+          </option>
+          <option
+            value="Sales"
+          >
+            Sales
+          </option>
+          <option
+            value="Software Engineer"
+          >
+            Software Engineer
+          </option>
+          <option
+            value="UX"
+          >
+            UX
+          </option>
+          <option
+            value="Videography"
+          >
+            Videography
+          </option>
+          <option
+            value="Writer"
+          >
+            Writer
+          </option>
+          ;
+        </select>
+      </div>
+      <div>
+        <p>
+          Experience Level
+        </p>
+        <select>
+          <option
+            value="--"
+          >
+            --
+          </option>
+          <option
+            value="Entry"
+          >
+            Entry
+          </option>
+          <option
+            value="Mid Level"
+          >
+            Mid Level
+          </option>
+          <option
+            value="Senior Level"
+          >
+            Senior Level
+          </option>
+          <option
+            value="management"
+          >
+            management
+          </option>
+          <option
+            value="Internship"
+          >
+            Internship
+          </option>
+          ;
+        </select>
+      </div>
+      <button
+        type="submit"
+      >
+         Search Jobs 
+      </button>
+    </div>
+     
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

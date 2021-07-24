@@ -1,11 +1,13 @@
-import Filters from '../containers/Filters';
-import Jobs from '../containers/Jobs';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Job from '../containers/Job';
+import Home from './Home';
 
 const App = () => (
   <div>
-    <Filters />
-    <Jobs />
-
+    <BrowserRouter>
+      <Route exact path="/" component={Home} />
+      <Route path="/Job" component={Job} />
+    </BrowserRouter>
   </div>
 );
 

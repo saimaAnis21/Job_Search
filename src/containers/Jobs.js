@@ -69,7 +69,11 @@ const mapStateToProps = (state) => ({
 });
 
 Jobs.propTypes = {
-  filters: PropTypes.objectOf(PropTypes.object),
+  filters: PropTypes.shape({
+    company: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    level: PropTypes.string.isRequired,
+  }),
 
 };
 

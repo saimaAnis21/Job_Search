@@ -15,11 +15,9 @@ const JobDesc = (props) => {
         },
       }}
       >
-
+        {' '}
         <span className="royalblue ">{info.company}</span>
-
       </Link>
-
       {info.name}
 
     </div>
@@ -27,7 +25,11 @@ const JobDesc = (props) => {
 };
 
 JobDesc.propTypes = {
-  info: PropTypes.objectOf.isRequired,
+  info: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    company: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+  }).isRequired,
 
 };
 
