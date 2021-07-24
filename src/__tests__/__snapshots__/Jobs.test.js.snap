@@ -5,7 +5,6 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-       
       <div
         class="job-panel"
       >
@@ -23,11 +22,9 @@ Object {
           
         </div>
       </div>
-       
     </div>
   </body>,
   "container": <div>
-     
     <div
       class="job-panel"
     >
@@ -45,7 +42,6 @@ Object {
         
       </div>
     </div>
-     
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

@@ -35,7 +35,7 @@ const Jobs = (props) => {
       if (data.results) {
         for (let i = 0; i < data.results.length; i += 1) {
           jobsData.push({
-            id: data.results[i].id,
+            id: data.results[i].id.toString(),
             company: data.results[i].company.name,
             name: data.results[i].name,
             site: data.results[i].refs.landing_page,

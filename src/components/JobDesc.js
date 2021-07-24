@@ -26,7 +26,7 @@ const JobDesc = (props) => {
 
 JobDesc.propTypes = {
   info: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     company: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
   }).isRequired,
