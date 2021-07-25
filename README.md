@@ -1,5 +1,11 @@
 # Job Search-App
 # [Live Link](https://job-search-app-101.herokuapp.com/)
+# Video Links:
+[Part 1 ](https://www.loom.com/share/3d579f5c6ab249c3b7feb129eaa8f8da?sharedAppSource=personal_library)
+
+[Part 2](https://www.loom.com/share/8f64afc65fdc4454a71e19bd221fb2af?sharedAppSource=personal_library)
+
+[Part 3](https://www.loom.com/share/675264d7d0c2477a9fd5b6af6d7ef1b2?sharedAppSource=personal_library)
 
 A  ![](https://img.shields.io/badge/Microverse-blueviolet)  capstone project for React-Redux Module
 
