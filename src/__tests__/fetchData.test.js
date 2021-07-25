@@ -27,9 +27,7 @@ describe('Data received from fetchData is valid', () => {
         page: 1,
         page_count: 33,
         items_per_page: 20,
-        took: 1,
         timed_out: false,
-        total: 656,
         aggregations: {},
       };
       expect(data).toMatchObject(obj);

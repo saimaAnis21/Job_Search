@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types/prop-types';
 import '../styles.css';
 
 const JobDesc = (props) => {
@@ -25,12 +25,7 @@ const JobDesc = (props) => {
 };
 
 JobDesc.propTypes = {
-  info: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    company: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-  }).isRequired,
-
+  info: PropTypes.objectOf(PropTypes.any).isRequired,
 };
 
 export default JobDesc;

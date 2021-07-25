@@ -70,18 +70,18 @@ const mapStateToProps = (state) => ({
 
 Jobs.propTypes = {
   filters: PropTypes.shape({
-    company: PropTypes.string.isRequired,
-    category: PropTypes.string.isRequired,
-    level: PropTypes.string.isRequired,
+    company: PropTypes.string,
+    category: PropTypes.string,
+    level: PropTypes.string,
   }),
 
 };
 
 Jobs.defaultProps = {
   filters: {
-    company: 'comp1',
-    category: 'cat1',
-    level: 'lev1',
+    company: '--',
+    category: '--',
+    level: '--',
 
   },
 };
