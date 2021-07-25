@@ -1,14 +1,6 @@
 import filterReducer from '../reducers/filter';
 import state from '../state';
 
-// const state = {
-//     filters: {
-//       company: '--',
-//       category: '--',
-//       level: '--',
-//     },
-//   };
-
 test('initialState to be as expected', () => {
   expect(state).toEqual({
     filters: {
